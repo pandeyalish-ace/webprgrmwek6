@@ -1,0 +1,107 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alish Pandey | Week 06 Assignment</title>
+    <style>
+        /* MISSION 1: Layout Fix (Mandatory) */
+        * {
+            box-sizing: border-box;
+        }
+
+        body { 
+            background: #1d1d1f; 
+            color: #f5f5f7; 
+            font-family: 'Inter', sans-serif; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+        }
+
+        /* MISSION 1: Box Model Properties */
+        .card { 
+            background: #2c2c2e; 
+            padding: 40px;          /* Mission 1: Inner Spacing */
+            border: 2px solid #333; /* Mission 1: Border Requirement */
+            margin: 20px;           /* Mission 1: Outer Spacing */
+            border-radius: 20px; 
+            text-align: center; 
+            width: 340px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        /* MISSION 1: Block Spacing (margin-bottom) */
+        #profile-name { 
+            font-size: 28px; 
+            margin-top: 0;
+            margin-bottom: 20px; 
+            color: #ffffff; 
+        }
+
+        .info { 
+            font-size: 15px; 
+            margin-bottom: 25px; 
+            font-weight: 600;
+        }
+
+        .info p {
+            margin: 8px 0;
+        }
+
+        /* COLORFUL TEXT CLASSES */
+        .email-text { color: #ff4b5c; }   /* Red */
+        .phone-text { color: #00f3ff; }   /* Blue */
+        .address-text { color: #ffcc00; } /* Yellow */
+
+        .bio { 
+            font-size: 14px; 
+            line-height: 1.6; 
+            color: #86868b; 
+            margin-bottom: 20px; 
+        }
+
+        /* MISSION 1: Button Spacing (margin-right) */
+        .btn {
+            background: #e50914;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-right: 15px; 
+            transition: 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #ff0a16;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1 id="profile-name">Alish Pandey</h1>
+        
+        <div class="info">
+            <p class="email-text">📧 alishpandey304@gmail.com</p>
+            <p class="phone-text">📱 010-5927-4941</p>
+            <a href="https://www.google.com/maps/search/744-15+Simgokbon-dong,+Sosa-gu,+Bucheon-si,+Gyeonggi-do" 
+               target="_blank" 
+               style="text-decoration: none;">
+                <p class="address-text">📍 Bucheon-si, Gyeonggi-do</p>
+            </a>
+        </div>
+        
+        <p class="bio">Passionate about coding and AI, focused on creating clean and modern digital experiences.</p>
+
+        <button class="btn">Connect</button>
+    </div>
+
+</body>
+</html>
